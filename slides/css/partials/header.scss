@@ -1,0 +1,36 @@
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: url(../img/bg.png) $php-purple;
+	background-attachment: fixed;
+}
+
+#navbar {
+	background: $header-color;
+	height: 3rem;
+	//padding-bottom: 10px;
+	box-sizing: content-box;
+	border-bottom: 0.6875rem solid transparentize($header-color, .5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+#logo {
+	text-align: center;
+	margin: {
+		top: 2.4375rem;
+		bottom: 3rem;
+	};
+	h1 {
+		width: 15.625rem;
+		height: 15.625rem;
+		//background: green;
+		margin: auto;
+		overflow: hidden;
+		display: block;
+		text-indent: -9999px;
+		background: url(../img/logo.png) no-repeat center;
+		background-size: 100%;
+	}
+}
