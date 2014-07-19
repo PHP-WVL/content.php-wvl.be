@@ -32,5 +32,16 @@ header {
 		text-indent: -9999px;
 		background: url(../img/logo.png) no-repeat center;
 		background-size: 100%;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			-webkit-transform: rotate(10deg);
+			-moz-transform: rotate(10deg);
+			-o-transform: rotate(10deg);
+			-ms-transform: rotate(10deg);
+			transform: rotate(10deg);
+		}
 	}
 }
