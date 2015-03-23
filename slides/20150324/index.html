@@ -26,7 +26,7 @@
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
@@ -54,6 +54,11 @@
                 background: none;
                 box-shadow: none;
             }
+
+            .reveal section img.icon {
+                margin: 0;
+                vertical-align: middle;
+            }
         </style>
 	</head>
 
@@ -80,14 +85,96 @@
 						<span class="emphasize">21:00 - 22:00</span> - The Database Access rEvolution (Jachim & Tom)<br />
 						<span class="emphasize">22:00 - ...</span> - Raffle & Socializen
 					</p>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
 				</section>
 
+                <section>
+                    <section data-background-image=>
+                        <img src="../img/previously_on_phpwvl.jpg" width="600" />
+                    </section>
+                    <section data-background-image="http://photos3.meetupstatic.com/photos/event/8/8/6/6/highres_434554918.jpeg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Roeselare</li>
+                                <li>30 man</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section data-background-image="http://photos2.meetupstatic.com/photos/event/8/8/7/4/highres_434554932.jpeg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Gert Poppe</li>
+                                <li>PDF zonder zorgen</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section data-background-image="http://photos4.meetupstatic.com/photos/event/8/8/8/d/highres_434554957.jpeg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Niels Vroman</li>
+                                <li>Wat kan Drupal 8 voor Symfony developers betekenen?</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section data-background-image="./skitch.jpg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Github</li>
+                                <li>5" Octocat Figurine</li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
+                        <li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>
+                        <li class=""><img class="icon" src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+                        <li class=""><img class="icon" src="../img/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+                        <li class=""><img class="icon" src="../img/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+                        <li class=""><img class="icon" src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+                        <li class=""><img class="icon" src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Slack?</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <a href="https://joind.in/event/view/3515">https://joind.in/event/view/3515</a>
+                    <aside class="notes">
+                        <ul>
+                            <li>Raffler connected</li>
+                        </ul>
+                    </aside>
+                </section>
 
 				<section>
 					<h2>Noaste kjee</h2>
-					<p class="emphasize">Woensdag 13/05/2015</p>
-					<img src="../img/logo_phpwvl.png" width="300" />
+					<p class="emphasize">Woensdag 13/05/2015<br />Studio Emma (Brugge)</p>
+                    <ul>
+                        <li class="fragment">Filip Vandegehuchte, Worldline <strong class="emphasize">(BE)</strong></li>
+                        <li class="fragment">Ben Marks, Magento Evangelist <strong class="emphasize">(US)</strong></li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Ni Verschietn, Tis ne woensdag</li>
+                            <li>E-Commerce edition?</li>
+                            <li>Eerste check van de 2015 todo list (internationale spreker)</li>
+                        </ul>
+                    </aside>
 				</section>
+
+                <section>
+                    <p><img src="../img/logo_phpwvl.png" width="150" /></p>
+                </section>
 			</div>
 
 		</div>
@@ -109,12 +196,12 @@
 
 				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal.js/plugin/notes/notes.js', async: true }
 				]
 			});
 
