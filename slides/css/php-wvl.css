@@ -1,0 +1,32 @@
+ul li {
+    list-style-type:none;
+}
+
+ul.conferences li {
+    list-style-type:disc;
+}
+
+div.reveal section .smaller {
+    line-height:1.2em;
+    color:cyan;
+    font-size:0.85em;
+}
+
+.emphasize {
+    color:cyan;
+}
+
+#wifi {
+    text-align:left;
+}
+
+.reveal section img {
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.reveal section img.icon {
+    margin: 0;
+    vertical-align: middle;
+}
