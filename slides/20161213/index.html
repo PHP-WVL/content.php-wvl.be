@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>PHP-WVL - 25/10/2016 Meetup</title>
+
+        <meta name="description" content="PHP-WVL Oktober Event">
+        <meta name="author" content="Tom Van Herreweghe">
+        <meta name="author" content="Jachim Coudenys">
+        <meta name="meetup" content="https://www.meetup.com/php-wvl/events/235482472/" />
+        <meta name="joindin" content="https://joind.in/event/php-wvl-december-meetup-at-guideline" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/league.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <link rel="stylesheet" href="../css/php-wvl.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <img src="../img/logo_phpwvl.png" width="400" />
+                    <!--<p id="wifi">
+                        Wifi: <span class="emphasize"></span><br />
+                        Pass: <span class="emphasize"></span>
+                    </p>-->
+                    <aside class="notes">
+                        <ul>
+                            <li>20e meetup</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Sponsors</h2>
+                    <p><img class="icon" src="../img/sponsors/studioemma.jpg" style="height: 90px;" /></p>
+                    <p><img class="icon" src="../img/sponsors/BOL_black.jpg" style="width: 150px;" /></p>
+                    <p class="fragment">Uw bedrijf?</p>
+                </section>
+
+                <section>
+                    <h2>Programma</h2>
+                    <p style="text-align:left;padding-left:150px;">
+                        <span class="emphasize">20:00 - 20:15</span> - Intro PHP-WVL<br />
+                        <span class="emphasize">20:15 - 21:00</span> - How we learned metric-driven-development the hard way (Michaël + Mike)<br />
+                        <span class="emphasize">21:00 - 21:15</span> - Pauze<br />
+                        <span class="emphasize">21:15 - 22:15</span> - Road To A Great Docker Development Environment (Ike)<br />
+                        <span class="emphasize">22:15 - ...</span> - Raffle &amp; Socializen
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <section data-background-image="../img/previously_on_phpwvl.jpg">
+
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/CvokMEyXgAQC5Fj.jpg:large">
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/CvofsuiXgAAHd46.jpg:large">
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/Cvos7JdXEAAkZL4.jpg:large">
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
+                        <li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>
+                        <li class=""><img class="icon" src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+                        <li class=""><img class="icon" src="../img/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+                        <li class=""><img class="icon" src="../img/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+                        <li class=""><img class="icon" src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+                        <li class="" style="color: red;"><img class="icon" src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+                        <li class=""><img class="icon" src="../img/icon_slack.png" />&nbsp;&nbsp;<a href="http://phpbelgium.slack.com">phpbelgium.slack.com</a> - #local-wvl</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <a href="https://joind.in/event/php-wvl-december-meetup-at-guideline">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-december-meetup-at-guideline"><br />
+                        https://joind.in/event/php-wvl-december-meetup-at-guideline
+                    </a>
+                    <aside class="notes">
+                        <ul>
+                            <li>Raffler connected</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Noaste kjee</h2>
+                    <p class="emphasize">Dinsdag 24 januari 2017 @ TUI (Oostende)<br />Pre PHPBenelux Conference meetup</p>
+                </section>
+
+                <section>
+                    <img src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/5/2/8/4/600_447621124.jpeg" width="500">
+                </section>
+
+                <section>
+                    <h2>Tied voo klappers</h2>
+                    <iframe src="http://tv.giphy.com/applause" width="500" height="400"></iframe>
+                </section>
+
+                <section>
+                    <p><img src="../img/logo_phpwvl.png" width="150" /></p>
+                </section>
+
+                <section>
+                    <h2>PHP-WVL Rondvraag</h2>
+
+                    <ul>
+                        <li><a href="http://goo.gl/nPuEF7">http://goo.gl/nPuEF7</a></li>
+                        <li class="fragment">25 reacties</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Algemeen</h2>
+                    </section>
+                    <section>
+                        <h2>Hoe makkelijk kan je tot op onze meetups raken?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Afwisseling van de PHP-WVL locaties
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Algemeen: Conclusie</h2>
+
+                        <p></p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Video</h2>
+                    </section>
+                    <section>
+                        <h2>Zou je gebruik maken van een livestream?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Indien er een livestream beschikbaar zou zijn...
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Zou je achteraf opnames van de sessies bekijken, als je er niet bij kon zijn?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Indien er achteraf opnames beschikbaar zouden zijn...
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Zou je betalen om achteraf naar sessies te kijken?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Video: Conclusie</h2>
+
+                        <p></p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Meetup organisatie</h2>
+                    </section>
+                    <section>
+                        <h2>De intro presentatie
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Inhoud intro presentatie
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Raffler methodiek
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Raffler prijzen
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Recurrentie van de meetups
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Wat vind/vond je van het 'challenge accepted' concept?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Activiteiten tijdens een meetup
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Wat vind je van het drank/eten aanbod
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Meetup organisatie: Conclusie</h2>
+
+                        <p></p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Algemene organisatie</h2>
+                    </section>
+                    <section>
+                        <h2>Behalve meetups organiseren, wat zou PHP-WVL nog moeten doen?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Welke extra activiteiten wil je wel eens doen?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Welke onderwerpen had je graag eens aan bod gezien tijdens en meetup?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Ik wil graag eens presenteren op PHP-WVL
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Andere vragen of opmerkingen?
+                        </h2>
+
+                        <p><img src=""></p>
+                    </section>
+                    <section>
+                        <h2>Algemene organisatie: Conclusie</h2>
+
+                        <p></p>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+                    <p style="text-decoration: line-through;"><a href="http://raffler.php-wvl.be/">raffler.php-wvl.be/#rules</a></p>
+
+					<!--
+                    <ul>
+                        <li>Provide feedback on joind.in</li>
+                        <li>Win (once) next meetup</li>
+                    </ul>
+					-->
+					<p class="fragment">
+						PHP-WVL Raffler CLI Edition!!!<br />
+						<a href="https://github.com/PHP-WVL/cli-raffler">https://github.com/PHP-WVL/cli-raffler</a>
+					</p>
+
+                    <ul>
+                        <li class="fragment">
+                            <a href="https://php7explained.com/">PHP 7 explained</a><br />
+                            <img src="https://php7explained.com/img/pdf1.png" width="150" />
+                        </li>
+                        <li class="fragment">PHPStorm license (anyone?)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>joind.in</h2>
+                    <a href="https://joind.in/event/php-wvl-december-meetup-at-guideline">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-december-meetup-at-guideline"><br />
+                        https://joind.in/event/php-wvl-december-meetup-at-guideline
+                    </a>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
