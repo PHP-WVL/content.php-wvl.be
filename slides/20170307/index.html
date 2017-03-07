@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>PHP-WVL - 07/03 Meetup</title>
+
+        <meta name="description" content="PHP-WVL Februari Event">
+        <meta name="author" content="Tom Van Herreweghe">
+        <meta name="author" content="Jachim Coudenys">
+        <meta name="author" content="Ike Devolder">
+        <meta name="meetup" content="https://www.meetup.com/php-wvl/events/237362528/" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/league.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <style>
+            ul li {
+                list-style-type:none;
+            }
+
+            ul.conferences li {
+                list-style-type:disc;
+            }
+
+            div.reveal section .smaller {
+                line-height:1.2em;
+                color:cyan;
+                font-size:0.85em;
+            }
+
+            .emphasize {
+                color:cyan;
+            }
+
+            #wifi {
+                text-align:left;
+            }
+
+            .reveal section img {
+                border: 0;
+                background: none;
+                box-shadow: none;
+            }
+
+            .reveal section img.icon {
+                margin: 0;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <img src="../img/logo_phpwvl.png" width="400" />
+                    <!--
+                    <p id="wifi">
+                        Wifi: <span class="emphasize"></span><br />
+                        Pass: <span class="emphasize"></span>
+                    </p>
+                    -->
+                </section>
+
+                <section>
+                    <h2>Programma</h2>
+                    <p style="text-align:left;padding-left:150px;">
+                        <span class="emphasize">20:00 - 20:25</span> - Jaaroverzicht PHP-WVL<br />
+                        <span class="emphasize">20:25 - 21:00</span> - Refactoring to Collections (Jachim)<br />
+                        <span class="emphasize">21:15 - 22:15</span> - Synchronous Replication For MySQL with Percona XtraDB Cluster (Kenny)<br />
+                        <span class="emphasize">22:15 - ...</span> - Raffle &amp; Socializen
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+
+				<section data-background-image="http://i.giphy.com/3oEdvanlXvozVLoIqQ.gif">
+				</section>
+
+				<section>
+					<section>
+						<h2>Statistikskes</h2>
+					</section>
+
+					<section>
+						<h2>#(Meetups)</h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">8</span>
+						</p>
+                        <p class="fragment">&Delta; -1</p>
+					</section>
+
+					<section>
+						<h2><span style="border-top:4px solid;">#(Bezoekers)</span></h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">25</span>
+						</p>
+						<p class="fragment">&Delta; -5</p>
+					</section>
+
+					<section>
+						<h2>#(Leden)</h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">324</span>
+						</p>
+						<p class="fragment">&Delta; +104</p>
+					</section>
+
+					<section>
+						<h2>#(Drinkups)</h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">1</span>
+						</p>
+						<p class="fragment">6 man</p>
+						<p class="fragment">&Delta; -4</p>
+					</section>
+
+					<section>
+						<h2>Recessie</h2>
+                        <h2 class="fragment">¯\_(ツ)_/¯</h2>
+					</section>
+				</section>
+
+				<section>
+					<section data-background-image="http://i.giphy.com/5xtDarmwsuR9sDRObyU.gif">
+					</section>
+
+					<section data-background-image="http://photos3.meetupstatic.com/photos/event/8/8/6/6/highres_434554918.jpeg">
+						<aside class="notes">
+							BEDANKT jullie! (bezoekers)
+						</aside>
+					</section>
+
+					<section data-background-image="http://photos4.meetupstatic.com/photos/event/8/c/8/a/highres_444875978.jpeg">
+						<aside class="notes">
+							BEDANKT sprekers!
+							<ol style="font-size:0.65em;">
+								<li>Arno Lambert</li>
+								<li>Tom Van Herreweghe (2x)</li>
+								<li>Matthias Mullie</li>
+								<li>Jonas Gielen</li>
+								<li>Freek Van der Herten</li>
+								<li>Ben Marks</li>
+								<li>Aaron Muylaert</li>
+								<li>Michaël Boué</li>
+								<li>Mike Warner</li>
+								<li>Ike Devolder</li>
+								<li>Jachim Coudenys (2x)</li>
+								<li>Nick Trogh</li>
+								<li>Jochen Vandendriesche</li>
+								<li>Pieter Meyvaert</li>
+								<li>Kenny Gryp</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://www.google.com/maps/d/u/0/embed?mid=zReloFaHEllc.kxET2PIG8KZA">
+						<aside class="notes">
+							BEDANKT locaties!
+							<ol style="font-size:0.65em;">
+								<li>Guideline (Brugge) (2x)</li>
+								<li>Park Office / Matthias Mullie (Kortrijk)</li>
+								<li>Studio Emma (Brugge)</li>
+								<li>King Foo (Roeselare)</li>
+								<li>Indie Group (Kortrijk)</li>
+								<li>TUI (Oostende)</li>
+							</ol>
+						</aside>
+					</section>
+
+                <section data-background-color="#fff">
+						<img class="icon" src="../img/sponsors/BOL_black.jpg" height="150" />
+						<img class="icon" src="../img/sponsors/studioemma.jpg" height="100" />
+						<br /><br />
+						<img class="icon" src="../img/supporters/webdoos.jpg" height="150" />
+						<img class="icon" src="../img/supporters/studyx.jpg" height="100" />
+						<aside class="notes">
+							BEDANKT oude sponsors &amp; supporters!
+						</aside>
+					</section>
+
+                <section data-background-color="#fff">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/studioemma.jpg" style="height: 90px;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/dxsolutions.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/guideline.png" style="height: 90px; background-color:white;" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/intracto.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/novado.png" style="height: 90px;background-color:white;" /></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+						<aside class="notes">
+							BEDANKT nieuwe sponsors!
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Plannen van de vorige keer</h2>
+					</section>
+
+					<section data-background-image="img/success.jpg">
+						<aside class="notes">
+							<ol style="font-size:0.65em;">
+								<li>Minder giphies</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section data-background-image="img/grumpy.jpg">
+						<aside class="notes">
+							<ol style="font-size:0.65em;">
+								<li>Westhoek veroveren</li>
+								<li>Volwaardige website</li>
+								<li>Opnemen sessies</li>
+							</ol>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Toekomstplannen</h2>
+					</section>
+
+					<section data-background-image="http://i.giphy.com/xNVaoWIWqLfZm.gif">
+						<aside class="notes">
+							't Is de duitses ook gelukt in 2 pogingen: de Westhoek veroveren!
+						</aside>
+					</section>
+
+					<section data-background-image="http://i.giphy.com/wpoLqr5FT1sY0.gif">
+						<aside class="notes">
+							Nog een poging om ne website te maken. Iemand die wil meehelpen? Design? Jens?
+						</aside>
+					</section>
+
+					<section data-background-image="http://i.giphy.com/rFBQzTgEqigG4.gif">
+						<aside class="notes">
+							Experimenteren met opnemen sessies
+						</aside>
+					</section>
+
+					<section data-background-image="img/overdose.jpg">
+						<aside class="notes">
+							Overdosis giphies. We nemen ons voor om dat niet meer te doen
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section data-background-image="http://i.giphy.com/n59dQcO9yaaaY.gif">
+						<aside class="notes">
+							Wat gedaan met sponsorgeld?
+							<ol style="font-size:0.65em;">
+								<li>Put gedempt (VZW opstartkosten)</li>
+								<li>Plakkers, plakkers &amp; plakkers</li>
+								<li>E-bike voor Jachim</li>
+								<li>Rollup</li>
+							</ol>
+						</aside>
+					</section>
+				</section>
+
+
+                <section>
+                    <ul>
+                        <li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
+                        <li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>
+                        <li class=""><img class="icon" src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+                        <li class=""><img class="icon" src="../img/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+                        <li class=""><img class="icon" src="../img/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+                        <li class=""><img class="icon" src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+                        <li class=""><img class="icon" src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+                        <li class=""><img class="icon" src="../img/icon_slack.png" />&nbsp;&nbsp;<a href="http://phpbelgium.slack.com">phpbelgium.slack.com</a> - #local-wvl</li>
+                    </ul>
+                </section>
+
+                <section>
+					<h2>joind.in</h2>
+                    <!--<a href="https://joind.in/event/view/@TODO">https://joind.in/event/view/@TODO</a><br />
+                    <img src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=https%3A//joind.in/event/view/@TODO&chld=H|0" />-->
+                    <aside class="notes">
+                        <ul>
+                            <li>Raffler connected</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Noaste kjee</h2>
+					<p class="emphasize">Dinsdag 05/04/2015</p>
+					<p>Guideline - Brugge</p>
+                </section>
+
+                <section>
+                    <h2>Tied voo klappers</h2>
+                    <iframe src="http://tv.giphy.com/applause"></iframe>
+                </section>
+
+                <section>
+                    <p><img src="../img/logo_phpwvl.png" width="150" /></p>
+                </section>
+
+                <section>
+                    <h2>Konferensies</h2>
+
+                    <ul class="conferences">
+                        <li>
+                            <strong class="emphasize">Confoo 2016</strong><br />
+                            Montreal, Canada
+                            <em>22-26 februari 2016</em>
+                        </li>
+                        <li>
+                            <strong class="emphasize">Midwest PHP 2016</strong><br />
+                            Mineapolis, USA
+                            <em>04 &amp; 05 maart 2016</em>
+                        </li>
+                        <li>
+                            <strong class="emphasize">Lone Star PHP 2016</strong><br />
+                            Dallas, USA
+                            <em>07-09 april 2016</em>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>https://m.joind.in/event/callforpapers</h2>
+
+                    <ul class="bullet">
+                        <li>
+                            <strong class="emphasize">phpDay 2016</strong>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+                    <p><a href="http://raffler.php-wvl.be/">http://raffler.php-wvl.be/</a></p>
+
+                    <ul class="bullet">
+						<li class="fragment">
+							<img src="https://s3.amazonaws.com/titlepages.leanpub.com/minimumviabletests/hero?1455903864" height="200" />
+						</li>
+						<li class="fragment">php[architect] issue</li>
+                        <li class="fragment">PHPStorm (2x)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>joind.in</h2>
+                    <!--<a href="https://joind.in/event/view/@TODO">https://joind.in/event/view/@TODO</a><br />
+                    <img src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=https%3A//joind.in/event/view/@TODO&chld=H|0" />-->
+                </section>
+            </div>
+
+        </div>
+
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
