@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>PHP-WVL - 03/10/2017 Meetup</title>
+
+        <meta name="description" content="PHP-WVL October Event">
+        <meta name="author" content="Tom Van Herreweghe">
+        <meta name="author" content="Jachim Coudenys">
+        <meta name="meetup" content="https://www.meetup.com/nl-NL/php-wvl/events/242089076/" />
+        <meta name="joindin" content="TODO" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/league.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <link rel="stylesheet" href="../css/php-wvl.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <img src="../img/logo_phpwvl.png" width="400" />
+                    <p id="wifi">
+                        Wifi: <span class="emphasize">-</span><br />
+                        Pass: <span class="emphasize">-</span>
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li>28e meetup</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section data-background-color="#fff">
+                    <!-- <h2>Sponsors</h2> -->
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="2" style="border-bottom-width:0;width:510px;text-align:center;"><img class="icon" src="../img/sponsors2017/studioemma.jpg" style="height: 90px;"/></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/dxsolutions.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/guideline.png" style="height: 90px; background-color:white;" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/intracto.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/novado.png" style="height: 90px;background-color:white;" /></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Programma</h2>
+                    <p style="text-align:left;padding-left:150px;">
+                        <span class="emphasize">20:00 - 20:15</span> - Intro PHP-WVL<br />
+                        <span class="emphasize">20:15 - 20:45</span> - Frontend stuff for Backend folks (Pieter Meyvaert)<br />
+                        <span class="emphasize">20:50 - 21:20</span> - Testing, waste of time?! (Stijn Duynslaeger)<br />
+                        <span class="emphasize">21:20 - 21:35</span> - PAUZE<br />
+                        <span class="emphasize">21:35 - 22:00</span> - There is an I in SOLID (Tom Van Herreweghe)<br />
+                        <span class="emphasize">22:00 - ...</span> - Raffle &amp; Socializen
+                    </p>
+                </section>
+
+                <section>
+                    <section data-background-image="../img/previously_on_phpwvl.jpg">
+
+                    </section>
+                    <section data-background-image="IMG_20170822_200258714.jpg">
+                    </section>
+                    <section data-background-image="IMG_20170822_200940280.jpg">
+                    </section>
+                    <section data-background-image="IMG_20170822_205525793_BURST000_COVER_TOP.jpg">
+                    </section>
+                    <section data-background-image="DH2zMIvWsAAOve-.jpg">
+                    </section>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class=""><img class="icon" src="../img/icon_slack.png" />&nbsp;&nbsp;<a href="http://phpbelgium.slack.com">phpbelgium.slack.com</a> - #local-wvl</li>
+                        <li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
+                        <li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>
+                        <li class=""><img class="icon" src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+                        <!--<li class=""><img class="icon" src="../img/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>-->
+                        <!--<li class=""><img class="icon" src="../img/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>-->
+                        <li class=""><img class="icon" src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+                        <li class="" style="color: red;"><img class="icon" src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <a href="https://joind.in/event/php-wvl-august-meetup-at-park-office">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-august-meetup-at-park-office"><br />
+                        https://joind.in/event/php-wvl-august-meetup-at-park-office
+                    </a>
+                </section>
+
+                <section>
+                    <h2>Noaste kjee</h2>
+                    <p class="emphasize">Dinsdag 14 november 2017 @ Webdoos (Brugge)</p>
+                </section>
+
+                <section>
+                    <h2><a href="http://php.ug/api/v1/calendar/list?location=51.29627609493991+3.27392578125&latitude=51.29627609493991&longitude=3.27392578125&distance=63">Elders in 't land</a></h2>
+                    <ul>
+                        <li class=""><span class="emphasize">05/10 - PHP Leuven</span></li>
+                        <li class=""><span class="emphasize">25/10 - PHP Antwerp</span></li>
+                        <li class=""><span class="emphasize">07/11 - PHP Gent</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section data-background-color="#bbb">
+                        <img src="special-edition.png" width="500"/>
+                    </section>
+
+                    <section>
+                        <h2><a href="https://phptestfest.org" target="_blank">PHP TestFest</a></h2>
+                        <p><img src="wooble-brigade.jpg" width="400" /></p>
+                        <ul>
+                            <li>20 en 27 november</li>
+                        </ul>
+                        <p>Samen met PHP Gent @ Combell</p>
+                        <p>telkens open vanaf 18u en starten om 19u met TESTING</p>
+                    </section>
+                </section>
+
+                <section data-background-color="#fff">
+                    <img src="studio-emma.svg" width="700">
+                </section>
+
+                <section>
+                    <h2>Tied voo klappers</h2>
+                    <img src="giphy.gif" width="500" height="400" />
+                </section>
+
+                <section>
+                    <p><img src="../img/logo_phpwvl.png" width="150" /></p>
+                </section>
+
+                <section>
+                    <h2 class="fragment">Joind.in commentaar ++</h2>
+                    <h2 class="fragment">Meetup aanwezig zin</h2>
+                    <h2 class="fragment"><a href="https://twitter.com/search?f=tweets&vertical=default&q=%23phpwvl&src=typd">#phpwvl</a></h2>
+
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+					<p class="fragment">
+						PHP-WVL Raffler CLI Edition!!!<br />
+						<a href="https://github.com/PHP-WVL/cli-raffler">https://github.com/PHP-WVL/cli-raffler</a>
+					</p>
+
+                    <ul>
+                        <li class="fragment">
+                            Nieuw joar, nieuwe regels
+                        </li>
+                        <li class="fragment">
+                            Boek gewonnen? Reviewke please
+                        </li>
+                        <li class="fragment">
+                            Geen reviewke? No worries, we gaan u niet overbelasten met nen nieuwen boek!
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Raffle <code>[black|white]</code>list</h2>
+
+                    <ul>
+                        <li><span class="emphasize">An</span> (<em>Build APIs You Won't Hate</em> review pending)</li>
+                        <li><span class="emphasize">Tobi</span> (<em>Refactoring to Collections</em> review pending)</li>
+                        <li><span class="emphasize">Bartel</span> (<em>Varnish in action</em> review pending)</li>
+                        <li><span class="emphasize">Someone</span> (<em>Microservices for Everyone</em> review pending)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+                    <ul>
+                        <li class="fragment">
+                            <img src="tdl-logo3.png" width="300" />
+                            <br />
+                            Test Driven Laravel
+                        </li>
+                        <li class="fragment">PHPArch magazine &times;2</li>
+                        <li class="fragment">PHPStorm license</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Joind.IN</h2>
+                    <a href="https://joind.in/event/php-wvl-august-meetup-at-park-office">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-august-meetup-at-park-office"><br />
+                        https://joind.in/event/php-wvl-august-meetup-at-park-office
+                    </a>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
