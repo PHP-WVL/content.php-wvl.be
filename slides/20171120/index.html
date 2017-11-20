@@ -121,11 +121,11 @@
 
                 <section>
                     <section>
-                        <pre><code class="hljs" data-trim contenteditable>
+                        <pre><code data-trim data-noescape>
 -- TEST --
 echo - hello
 -- FILE --
-&t;?php
+&lt;?php
 echo '#phptestfest';
 ?&gt;
 -- EXPECT --
@@ -266,16 +266,16 @@ echo '#phptestfest';
 
                     <section>
                         <h3>Credits</h3>
-                        <pre><code class="hljs" data-trim contenteditable>
+                        <pre><code data-trim data-noescape>
 -- TEST --
 echo - hello
 -- CREDITS --
-Jachim Coudenys <jachimcoudenys [AT] gmail [DOT] com>
+Jachim Coudenys &lt;jachimcoudenys@gmail.com&gt;
 User Group: PHP-WVL & PHPGent #PHPTestFest
 -- FILE --
-<?php
+&lt;?php
 echo '#phptestfest';
-?>
+?&gt;
 -- EXPECT --
 #phptestfest
     					</code></pre>
@@ -296,6 +296,26 @@ echo '#phptestfest';
                             <li class="fragment"><code>git checkout -b branch-for-my-test phptestfest-2017-master</code></li>
                             <li class="fragment">1 pull request, 1 phpt file</li>
                             <li class="fragment">Pull request description + <code>User Group: PHP-WVL & PHPGent #PHPTestFest</code></li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Final notes</h3>
+
+                        <ul>
+                            <li class="fragment">
+                                <a href="https://phptestfest.org/start/#win-prizes">
+                                    https://phptestfest.org/start/#win-prizes
+                                </a>
+                            </li>
+                            <li class="fragment">Do not test ZPP ( zend_parse_parameters)<br >
+                                <code>expects parameter %d to be %s, %s given</code>
+                            </li>
                         </ul>
                         <aside class="notes">
                             <ul>
