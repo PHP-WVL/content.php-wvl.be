@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>PHP-WVL &amp; PHP Gent - 27/11/2017 PHP TestFest 2017</title>
+
+        <meta name="description" content="PHP TestFest 2017">
+        <meta name="meetup" content="https://www.meetup.com/php-wvl/events/244681435/" />
+        <meta name="joindin" content="" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/simple.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <style type="text/css">
+            .reveal section img {
+                border: 0;
+                box-shadow: none;
+                background: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <div>
+                        <img src="../img/logo_phpwvl.png" width="350" />
+                        <img src="phpgent.jpeg" width="350" style="margin-bottom: 40px" />
+                    </div>
+
+                    <h1 style="font-size: 2.5em;">PHP TestFest 2017</h1>
+
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="LOGO-COMBELL.png" />
+
+                    <p class="fragment">Deur!</p>
+
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="https://phptestfest.org/images/wooble-brigade.jpg" />
+
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>PHP Tests?</h2>
+
+                    <p class="fragment">Black-box testing</p>
+
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>run-tests.php</h2>
+
+                    <p><a href="https://github.com/php/php-src/blob/master/run-tests.php">https://github.com/php/php-src/blob/master/run-tests.php</a></p>
+                </section>
+
+                <section>
+                    <h2><code>*.phpt</code></h2>
+
+                    <ul>
+                        <li class="fragment">Normal: <code>./tests</code></li>
+                        <li class="fragment">Extensions: <code>./ext/{name}/tests</code></li>
+                        <li class="fragment">Zend: <code>./Zend/tests</code></li>
+                        <li class="fragment">SAPI: <code>./sapi/{name}/tests</code></li>
+                    </ul>
+
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <section>
+                        <pre><code data-trim data-noescape>
+-- TEST --
+echo - hello
+-- FILE --
+&lt;?php
+echo '#phptestfest';
+?&gt;
+-- EXPECT --
+#phptestfest
+    					</code></pre>
+
+                        <p><a href="http://qa.php.net/write-test.php">http://qa.php.net/write-test.php</a></p>
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section data-background-color="#dca7a7">
+                        <h3>Getting PHP</h3>
+
+                        <ul>
+                            <li class="fragment"><code>git clone git@github.com:php/php-src.git</code></li>
+                            <li class="fragment"><code>./buildconf</code></li>
+                            <li class="fragment"><code>./configure --enable-maintainer-zts --enable-debug --enable-cli</code></li>
+                            <li class="fragment"><code>make -j9</code></li>
+                            <li class="fragment"><code>sapi/cli/php --version</code></li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>nproc</li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section data-background-color="#dca7a7">
+                        <h3>Running tests</h3>
+
+                        <ul>
+                            <li class="fragment"><code>make test TESTS=tests/basic/001.phpt</code></li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Debugging</h3>
+
+                        <ul>
+                            <li class="fragment"><code>*.out</code></li>
+                            <li class="fragment"><code>*.exp</code></li>
+                            <li class="fragment"><code>*.diff</code></li>
+                            <li class="fragment"><code>*.log</code></li>
+                            <li class="fragment"><code>*.php</code></li>
+                            <li class="fragment"><code>*.sh</code></li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Naming Conventions</h3>
+
+                        <ul>
+                            <li><code>{function-name}_basic.phpt</code></li>
+                            <li><code>{function-name}_error.phpt</code></li>
+                            <li><code>{function-name}_variation.phpt</code></li>
+                            <li><code>{ext-name}{number}.phpt</code></li>
+                            <li><code>bug{bug-id}.phpt</code></li>
+                        </ul>
+
+                        <p><a href="http://qa.php.net/write-test.php#naming-conventions">http://qa.php.net/write-test.php#naming-conventions</a></p>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>What to test?</h3>
+
+                        <ul>
+                            <li class="fragment">Improve coverage (gcov or <a href="https://github.com/coudenysj/phptestfest-php-src/commits/phptestfest-2017-master-merged-pull-requests">coudenysj</a> repo)<br >
+                                <a href="http://gcov.php.net/PHP_7_2/lcov_html/">http://gcov.php.net/PHP_7_2/lcov_html/</a>
+                            </li>
+                            <li class="fragment">Find bugs to test<br />
+                                <a href="https://bugs.php.net/">https://bugs.php.net/</a>
+                            </li>
+                            <li class="fragment">Fix failing tests<br />
+                                <a href="http://gcov.php.net/viewer.php?version=PHP_7_2&func=tests">http://gcov.php.net/viewer.php?version=PHP_7_2&func=tests</a>
+                            </li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Proving bugs</h3>
+
+                        <ul>
+                            <li class="fragment">Find bugs to test<br />
+                                <a href="https://bugs.php.net/bug.php?id=75577">https://bugs.php.net/bug.php?id=75577</a>
+                            </li>
+                            <li class="fragment">Check if no pull request exists<br />
+                                <a href="https://github.com/phpcommunity/phptestfest-php-src/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+75577">https://github.com/phpcommunity/phptestfest-php-src/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+75577</a>
+                            </li>
+                            <li class="fragment">Hack away!<br />
+                                AKA Copy Paste :)
+                            </li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Reading Source</h3>
+
+                        <ul>
+                            <li class="fragment">PHP_FUNCTION</li>
+                            <li class="fragment">Find exceptions</li>
+                            <li class="fragment">etc...</li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Docker</h3>
+
+                        <ul>
+                            <li class="fragment"><del>https://github.com/herdphp/docker-phpqa</del></li>
+                            <li class="fragment">https://github.com/PHPTestFestBrasil/phptt</li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Credits</h3>
+                        <pre><code data-trim data-noescape>
+-- TEST --
+echo - hello
+-- CREDITS --
+Jachim Coudenys &lt;jachimcoudenys@gmail.com&gt;
+User Group: PHP-WVL & PHPGent #PHPTestFest
+-- FILE --
+&lt;?php
+echo '#phptestfest';
+?&gt;
+-- EXPECT --
+#phptestfest
+    					</code></pre>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Contributing</h3>
+
+                        <ul>
+                            <li class="fragment">Github account</li>
+                            <li class="fragment">Fork https://github.com/phpcommunity/phptestfest-php-src</li>
+                            <li class="fragment"><code>git checkout -b branch-for-my-test phptestfest-2017-master</code></li>
+                            <li class="fragment">1 pull request, 1 phpt file</li>
+                            <li class="fragment">Pull request description + <code>User Group: PHP-WVL & PHPGent #PHPTestFest</code></li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Final notes</h3>
+
+                        <ul>
+                            <li class="fragment">
+                                <a href="https://phptestfest.org/start/#win-prizes">
+                                    https://phptestfest.org/start/#win-prizes
+                                </a>
+                            </li>
+                            <li class="fragment">Do not test ZPP ( zend_parse_parameters)<br >
+                                <code>expects parameter %d to be %s, %s given</code>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h3>Resources</h3>
+
+                        <ul>
+                            <li><a href="http://qa.php.net/write-test.php">qa.php.net/write-test.php</a></li>
+                            <li><a href="http://qa.php.net/phpt_details.php">qa.php.net/phpt_details.php</a></li>
+                            <li><a href="http://gcov.php.net">gcov.php.net</a></li>
+                            <li><a href="https://github.com/phpcommunity/phptestfest-php-src">https://github.com/phpcommunity/phptestfest-php-src</a></li>
+                            <li><a href="https://groups.google.com/a/phpcommunity.org/forum/#!forum/testfest">groups.google.com/a/phpcommunity.org/forum/#!forum/testfest</a></li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
