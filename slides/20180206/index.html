@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>PHP-WVL - 06/02/2018 Meetup</title>
+
+        <meta name="description" content="PHP-WVL Februari Event">
+        <meta name="author" content="Tom Van Herreweghe">
+        <meta name="author" content="Jachim Coudenys">
+        <meta name="author" content="Ike Devolder">
+        <meta name="meetup" content="https://www.meetup.com/php-wvl/events/242089102/" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/league.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <style>
+            ul li {
+                list-style-type:none;
+            }
+
+            ul.conferences li {
+                list-style-type:disc;
+            }
+
+            div.reveal section .smaller {
+                line-height:1.2em;
+                color:cyan;
+                font-size:0.85em;
+            }
+
+            .emphasize {
+                color:cyan;
+            }
+
+            #wifi {
+                text-align:left;
+            }
+
+            .reveal section img {
+                border: 0;
+                background: none;
+                box-shadow: none;
+            }
+
+            .reveal section img.icon {
+                margin: 0;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <img src="../img/logo_phpwvl.png" width="400" />
+                    <p id="wifi">
+                        Wifi: <span class="emphasize"></span><br />
+                        Pass: <span class="emphasize"></span>
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li>29e meetup</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section data-background-color="#fff">
+                    <!-- <h2>Sponsors</h2> -->
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="2" style="border-bottom-width:0;width:510px;text-align:center;"><img class="icon" src="../img/sponsors2017/studioemma.jpg" style="height: 90px;"/></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/dxsolutions.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/guideline.png" style="height: 90px; background-color:white;" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/intracto.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/novado.png" style="height: 90px;background-color:white;" /></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Programma</h2>
+                    <p style="text-align:left;padding-left:150px;">
+                        <span class="emphasize">20:00 - 20:25</span> - Jaaroverzicht PHP-WVL<br />
+                        <span class="emphasize">20:25 - 20:30</span> - Intro Locatiesponsor<br />
+                        <span class="emphasize">20:30 - 21:15</span> - How Doctrine caching can skyrocket your application (Jachim)<br />
+                        <span class="emphasize">21:15 - 21:30</span> - Pauze<br />
+                        <span class="emphasize">21:45 - 22:00</span> - Image Classification with PHPML (Tom)<br />
+                        <span class="emphasize">22:00 - 22:15</span> - Symfony Flex (Jachim)<br />
+                        <span class="emphasize">22:15 - ...</span> - Raffle &amp; Socializen
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+
+				<section data-background-image="img/birthday.gif">
+				</section>
+
+				<section>
+					<section>
+						<h2>Statistikskes</h2>
+					</section>
+
+					<section>
+						<h2>#(Meetups)</h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">8</span>
+						</p>
+                        <p class="fragment">&Delta; 0</p>
+					</section>
+
+					<section>
+						<h2><span style="border-top:4px solid;">#(Bezoekers)</span></h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">25</span>
+						</p>
+						<p class="fragment">&Delta; 0</p>
+					</section>
+
+                    <section>
+                        <div>
+                            <img src="../img/logo_phpwvl.png" width="350" />
+                            <img src="../img/logo_phpgent.jpeg" width="350" />
+                        </div>
+
+                        <h1 style="font-size: 2.5em;">PHP TestFest 2017</h1>
+
+						<p class="fragment">Opened  PR : 13</p>
+						<p class="fragment">Accepted PR: 12</p>
+
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+
+					<section>
+						<h2>#(Leden)</h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">376</span>
+						</p>
+						<p class="fragment">&Delta; +52</p>
+					</section>
+
+					<section>
+						<h2>#(Drinkups)</h2>
+						<p class="emphasize fragment">
+							<span style="font-size:3em;">1</span>
+						</p>
+						<p class="fragment">8 aanwezigen</p>
+						<p class="fragment">&Delta; +2</p>
+					</section>
+
+					<section>
+						<h2>Stagnatie?</h2>
+                        <h2 class="fragment">¯\_(ツ)_/¯</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+                        <img src="img/thanks.gif" alt="thanks" />
+					</section>
+
+					<section data-background-image="img/bezoekers/IMG_20170307_195322375.jpg">
+					</section>
+					<section data-background-image="img/bezoekers/IMG_20170418_201756877.jpg">
+					</section>
+					<section data-background-image="img/bezoekers/IMG_20170530_210804361.jpg">
+					</section>
+					<section data-background-image="img/bezoekers/IMG_20170822_205525793_BURST000_COVER_TOP.jpg">
+						<aside class="notes">
+							BEDANKT bezoekers!
+							<ol style="font-size:0.65em;">
+								<li>Arno Lambert</li>
+								<li>Tom Van Herreweghe (2x)</li>
+								<li>Matthias Mullie</li>
+								<li>Jonas Gielen</li>
+								<li>Freek Van der Herten</li>
+								<li>Ben Marks</li>
+								<li>Aaron Muylaert</li>
+								<li>Michaël Boué</li>
+								<li>Mike Warner</li>
+								<li>Ike Devolder</li>
+								<li>Jachim Coudenys (2x)</li>
+								<li>Nick Trogh</li>
+								<li>Jochen Vandendriesche</li>
+								<li>Pieter Meyvaert</li>
+								<li>Kenny Gryp</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section data-background-image="img/klappers/IMG_20170418_201205151.jpg">
+					</section>
+					<section data-background-image="img/klappers/IMG_20170418_211906531.png">
+					</section>
+					<section data-background-image="img/klappers/IMG_20170530_202002764_HDR.jpg">
+					</section>
+					<section data-background-image="img/klappers/IMG_20170822_202543957.jpg">
+						<aside class="notes">
+							BEDANKT klappers!
+							<ol style="font-size:0.65em;">
+                                <li>Jachim Coudenys (2x)</li>
+                                <li>Kenny Gryp</li>
+                                <li>Matthias Mullie</li>
+                                <li>Thijs Feryn</li>
+                                <li>Andreas Creten</li>
+                                <li>Niels Vroman</li>
+                                <li>Robrecht Plaisier</li>
+                                <li>Ike Devolder (2x)</li>
+                                <li>Pieter Meyvaert (2x)</li>
+                                <li>Stijn Duynslaeger</li>
+                                <li>Tom Van Herreweghe (2x)</li>
+                                <li>Glenn Matthys</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://www.google.com/maps/d/u/1/embed?mid=1guIkyh7zUIugIvX_wEn2VSyLaDA">
+						<aside class="notes">
+							BEDANKT locaties!
+							<ol style="font-size:0.65em;">
+								<li>King Foo (Roeselare)</li>
+								<li>Studio Emma (Brugge) (2x)</li>
+                                <li>DX-Solutions (Harelbeke)</li>
+								<li>Parkoffice / Matthias Mullie (Kortrijk)</li>
+								<li>Webdoos (Brugge)</li>
+								<li>Studio Emma (Kortrijk)</li>
+							</ol>
+						</aside>
+					</section>
+
+                <section data-background-color="#fff">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/studioemma.jpg" style="height: 90px;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/dxsolutions.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/guideline.png" style="height: 90px; background-color:white;" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/intracto.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/novado.png" style="height: 90px;background-color:white;" /></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+						<aside class="notes">
+							BEDANKT sponsors!
+						</aside>
+					</section>
+				</section>
+
+                <section>
+                    <section data-transition="fade">
+                        <h3>klappers</h3>
+                    </section>
+                    <section data-transition="fade">
+                        <h2>klappers</h2>
+                    </section>
+                    <section data-transition="fade">
+                        <h1>klappers</h1>
+                    </section>
+
+                    <section data-transition="fade">
+                        <img src="img/sprekers-sprekers-sprekers.gif" alt="sprekers" />
+                    </section>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
+                        <li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>
+                        <li class=""><img class="icon" src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+                        <li class=""><img class="icon" src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+                        <li class="" style="color: red;"><img class="icon" src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+                        <li class=""><img class="icon" src="../img/icon_slack.png" />&nbsp;&nbsp;<a href="http://phpbelgium.slack.com">phpbelgium.slack.com</a> - #local-wvl</li>
+                    </ul>
+                </section>
+
+                <section>
+					<h2>joind.in</h2>
+                    <a href="https://joind.in/event/php-wvl-february-meetup-at-b-bright<Paste>">https://joind.in/event/php-wvl-february-meetup-at-b-bright</a><br />
+                    <img src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=https%3A//joind.in/event/php-wvl-february-meetup-at-b-bright&chld=H|0" />
+                </section>
+
+                <section>
+                    <h2>Noaste kjee</h2>
+					<p class="emphasize">Dinsdag 20/03/2018</p>
+					<p>??? - ???</p>
+                </section>
+
+                <section>
+                    <h2>Tied voo klappers</h2>
+                    <iframe src="http://tv.giphy.com/applause"></iframe>
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+					<p class="fragment">
+						PHP-WVL Raffler CLI Edition!!!<br />
+						<a href="https://github.com/PHP-WVL/cli-raffler">https://github.com/PHP-WVL/cli-raffler</a>
+					</p>
+
+                    <ul>
+                        <li class="fragment">
+                            Nieuw joar, zelfste regels
+                        </li>
+                        <li class="fragment">
+                            Boek gewonnen? Reviewke please
+                        </li>
+                        <li class="fragment">
+                            Geen reviewke? No worries, we gaan u niet overbelasten met nen nieuwen boek!
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Raffle <code>[black|white]</code>list</h2>
+
+                    <ul>
+                        <li><span class="emphasize">An Van den Bosch</span> (<em>Build APIs You Won't Hate</em> review pending)</li>
+                        <li><span class="emphasize">Tobi Beernaert</span> (<em>Refactoring to Collections</em> review pending)</li>
+                        <li><span class="emphasize">Bartel Samyn</span> (<em>Varnish in action</em> review pending)</li>
+                        <li><span class="emphasize">Arno Van Boxel</span> (<em>Microservices for Everyone</em> review pending)</li>
+                        <li><span class="emphasize">Pieter-Jan Fiers</span> (<em>Test Driven Laravel</em> review pending)</li>
+                        <li><span class="emphasize">Jo Vandale</span> (<em>Pro Git</em> review pending)</li>
+                    </ul>
+                </section>
+
+				<section>
+					<section data-transition="fade">
+						<h2>Raffle</h2>
+
+						<ul>
+							<li>
+								<img src="img/liquid-rocket-fuel.jpg" height="300" />
+								<br />
+								Ignition!: An Informal History of Liquid Rocket Propellants
+							</li>
+						</ul>
+					</section>
+					<section data-transition="fade">
+						<h2>Raffle</h2>
+
+						<ul>
+							<li>
+								<img src="img/symfony-fundamentals.png" height="300" />
+								<br />
+								Symfony 4 Fundamentals: Services, Config &amp; Environments
+							</li>
+						</ul>
+					</section>
+					<section data-transition="fade">
+						<h2>Raffle</h2>
+
+						<ul>
+							<li>PHPArch magazine &times;2</li>
+							<li>PHPStorm license</li>
+						</ul>
+					</section>
+				</section>
+
+                <section>
+					<h2>joind.in</h2>
+                    <a href="https://joind.in/event/php-wvl-february-meetup-at-b-bright<Paste>">https://joind.in/event/php-wvl-february-meetup-at-b-bright</a><br />
+                    <img src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=https%3A//joind.in/event/php-wvl-february-meetup-at-b-bright&chld=H|0" />
+                </section>
+            </div>
+
+        </div>
+
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
