@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>PHP-WVL - 24/04/2018 Meetup</title>
+
+        <meta name="description" content="PHP-WVL April Event">
+        <meta name="author" content="Tom Van Herreweghe">
+        <meta name="author" content="Jachim Coudenys">
+        <meta name="author" content="Ike Devolder">
+        <meta name="meetup" content="https://www.meetup.com/nl-NL/php-wvl/events/nphhxmyxhbcb/" />
+        <meta name="joindin" content="https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018/details" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/league.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <link rel="stylesheet" href="../css/php-wvl.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <img src="../img/logo_phpwvl.png" width="400" />
+                    <p id="wifi">
+                        Wifi: <span class="emphasize">-</span><br />
+                        Pass: <span class="emphasize">-</span>
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li>33e meetup</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section data-background-color="#fff">
+                    <!-- <h2>Sponsors</h2> -->
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="2" style="border-bottom-width:0;width:510px;text-align:center;"><img class="icon" src="../img/sponsors2017/studioemma.jpg" style="height: 90px;"/></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/dxsolutions.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/guideline.png" style="height: 90px; background-color:white;" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/intracto.png" style="height: 90px;background-color:white;" /></td>
+                            <td colspan="2" style="border-bottom-width:0;width:310px;text-align:center;"><img class="icon" src="../img/sponsors2017/novado.png" style="height: 90px;background-color:white;" /></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Programma</h2>
+                    <p style="text-align:left;padding-left:150px;">
+                        <span class="emphasize">20:00 - 20:10</span> - Intro PHP-WVL<br />
+                        <span class="emphasize">20:10 - 20:15</span> - Intro DX-Solutions<br />
+                        <span class="emphasize">20:15 - 20:45</span> - From scratch to production with docker<br />
+                        <span class="emphasize">20:45 - 22:00</span> - Keuns kweken in Symfony<br />
+                        <span class="emphasize">22:00 - ...</span> - Raffle &amp; Socializen
+                    </p>
+                </section>
+
+                <section>
+                    <section data-background-image="../img/previously_on_phpwvl.jpg">
+
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/DYwQfVAXUAA35Xo.jpg:large">
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/DYwlqlZX0AAvrWS.jpg:large">
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/DYwluUmX4AEp-i-.jpg:large">
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/DYwltMqWsAEDFlw.jpg:large">
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/DYwlr-iW0AAVJbl.jpg:large">
+                    </section>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class=""><img class="icon" src="../img/icon_slack.png" />&nbsp;&nbsp;<a href="http://phpbelgium.slack.com">phpbelgium.slack.com</a> - #local-wvl</li>
+                        <li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
+                        <li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>
+                        <li class=""><img class="icon" src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+                        <!--<li class=""><img class="icon" src="../img/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>-->
+                        <!--<li class=""><img class="icon" src="../img/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>-->
+                        <li class=""><img class="icon" src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+                        <li class="" style="color: red;"><img class="icon" src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <a href="https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018">
+                    <a href="https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018"><br />
+                        https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018
+                    </a>
+                </section>
+
+                <section>
+                    <h2>Noaste kjee</h2>
+                    <p class="emphasize">Dinsdag 12 juni 2018 @ DX-Solutions (Brugge)</p>
+                </section>
+
+                <!--<section>
+                    <h2><a href="http://php.ug/api/v1/calendar/list?location=51.29627609493991+3.27392578125&latitude=51.29627609493991&longitude=3.27392578125&distance=63">Elders in 't land</a></h2>
+                    <ul>
+                        <li class=""><span class="emphasize">23/08 - Gent PHP</span></li>
+                        <li class=""><span class="emphasize">31/08 - PHP Antwerp</span></li>
+                        <li class=""><span class="emphasize">06/09 - Brussels PHP</span></li>
+                        <li class=""><span class="emphasize">07/09 - PHP Leuven</span></li>
+                        <li class=""><span class="emphasize">12/09 - Laravel Brussels</span></li>
+                    </ul>
+                </section>-->
+
+                <section>
+                    <h2>Tied voo klappers</h2>
+                    <iframe src="http://tv.giphy.com/applause" width="500" height="400"></iframe>
+                </section>
+
+                <section>
+                    <p><img src="../img/logo_phpwvl.png" width="150" /></p>
+                </section>
+
+                <section>
+                    <h2 class="fragment">Joind.in commentaar ++</h2>
+                    <h2 class="fragment">Meetup aanwezig zin</h2>
+                    <h2 class="fragment"><a href="https://twitter.com/search?f=tweets&vertical=default&q=%23phpwvl&src=typd">#phpwvl</a></h2>
+
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+					<p class="fragment">
+						PHP-WVL Raffler CLI Edition!!!<br />
+						<a href="https://github.com/PHP-WVL/cli-raffler">https://github.com/PHP-WVL/cli-raffler</a>
+					</p>
+
+                    <ul>
+                        <li class="fragment">
+                            Nieuw joar, nieuwe regels
+                        </li>
+                        <li class="fragment">
+                            Boek gewonnen? Reviewke please
+                        </li>
+                        <li class="fragment">
+                            Geen reviewke? No worries, we gaan u niet overbelasten met nen nieuwen boek!
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Raffle <code>[black|white]</code>list</h2>
+
+                    <ul>
+                        <li><span class="emphasize">An</span> (<em>Build APIs You Won't Hate</em> review pending)</li>
+                        <li><span class="emphasize">Tobi</span> (<em>Refactoring to Collections</em> review pending)</li>
+                        <li><span class="emphasize">Bartel</span> (<em>Varnish in action</em> review pending)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+                    <ul>
+                        <li class="fragment">
+                            <img src="data:image/png;base64,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" width="200" />
+                            <br />
+                            10% korting JSConf &times;2
+                        </li>
+                        <li class="fragment">PHPArch magazine &times;2</li>
+                        <li class="fragment">PHPStorm license</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Toet de noaste kjé</h2>
+                    <a href="https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018"><br />
+                        https://joind.in/event/php-wvl-april-meetup-at-dx-solutions-2018
+                    </a>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
