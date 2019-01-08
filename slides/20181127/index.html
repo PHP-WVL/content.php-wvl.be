@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>PHP-WVL - 27/11/2018 Meetup</title>
+
+        <meta name="description" content="PHP-WVL November Event">
+        <meta name="author" content="Tom Van Herreweghe">
+        <meta name="author" content="Jachim Coudenys">
+        <meta name="author" content="Ike Devolder">
+        <meta name="meetup" content="https://www.meetup.com/php-wvl/events/nphhxmyxpbkc/" />
+        <meta name="joindin" content="https://joind.in/event/php-wvl-november-meetup-at-digicreate" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/league.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <link rel="stylesheet" href="../css/php-wvl.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <img src="../img/logo_phpwvl.png" width="400" />
+                    <p id="wifi">
+                        Wifi: <span class="emphasize">-</span><br />
+                        Pass: <span class="emphasize">-</span>
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li>37e meetup</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Programma</h2>
+                    <p style="text-align:left;padding-left:150px;">
+                        <span class="emphasize">20:00 - 20:15</span> - Intro PHP-WVL<br />
+                        <span class="emphasize">20:15 - 20:25</span> - Digicreate<br />
+                        <span class="emphasize">20:15 - 21:15</span> - Web scraping in 't echt<br />
+                        <span class="emphasize">21:30 - 22:15</span> - Profiling PHP applications<br />
+                        <span class="emphasize">22:15 - ...</span> - Raffle &amp; Socializen
+                    </p>
+                </section>
+
+                <section>
+                    <section data-background-image="../img/previously_on_phpwvl.jpg">
+                    </section>
+                    <section class="tweet">
+                        <blockquote class="twitter-tweet" data-lang="nl"><p lang="nl" dir="ltr">Aan al degene die verstek hebben gelaten gisteren voor de &quot;Testing Workshop Game&quot; door <a href="https://twitter.com/DragonBe?ref_src=twsrc%5Etfw">@DragonBe</a> bij <a href="https://twitter.com/phpwvl?ref_src=twsrc%5Etfw">@phpwvl</a> . Je hebt iets geweldig gemist <a href="https://twitter.com/hashtag/phpwvl?src=hash&amp;ref_src=twsrc%5Etfw">#phpwvl</a><br><br>Dikke merci <a href="https://twitter.com/DragonBe?ref_src=twsrc%5Etfw">@DragonBe</a> , we hebben genoten</p>&mdash; Ike Devolder (@BlackIkeEagle) <a href="https://twitter.com/BlackIkeEagle/status/1052450523180339200?ref_src=twsrc%5Etfw">17 oktober 2018</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </section>
+                    <section data-background-image="https://pbs.twimg.com/media/DpqWGwsWwAABOUL.jpg:large">
+                    </section>
+                    <section class="tweet">
+                        <blockquote class="twitter-tweet" data-lang="nl"><p lang="en" dir="ltr">Just tried out the <a href="https://twitter.com/Yubico?ref_src=twsrc%5Etfw">@Yubico</a> key that <a href="https://twitter.com/DragonBe?ref_src=twsrc%5Etfw">@DragonBe</a> most graciously explained at the last <a href="https://twitter.com/phpwvl?ref_src=twsrc%5Etfw">@phpwvl</a> meetup. Interesting piece of technology, which certainly forces us to rethink the concept of security. Thnx again <a href="https://twitter.com/DragonBe?ref_src=twsrc%5Etfw">@DragonBe</a> :)</p>&mdash; Bert Van de Casteele (@Alienpruts) <a href="https://twitter.com/Alienpruts/status/1054007961385926656?ref_src=twsrc%5Etfw">21 oktober 2018</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </section>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class=""><img class="icon" src="../img/icon_slack.png" />&nbsp;&nbsp;<a href="http://phpbelgium.slack.com">phpbelgium.slack.com</a> - #local-wvl</li>
+                        <li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
+                        <!--<li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>-->
+                        <li class=""><img class="icon" src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+                        <!--<li class=""><img class="icon" src="../img/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>-->
+                        <!--<li class=""><img class="icon" src="../img/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>-->
+                        <li class=""><img class="icon" src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+                        <li class="" style="color: red;"><img class="icon" src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <a href="https://joind.in/event/php-wvl-november-meetup-at-digicreate">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-november-meetup-at-digicreate"><br />
+                        https://joind.in/event/php-wvl-november-meetup-at-digicreate
+                    </a>
+                </section>
+
+                <section>
+                    <h2>Noaste kjee</h2>
+                    <p class="emphasize">Dinsdag 8 December 2019 @ BrightAnalytics (Gits)</p>
+                    <p class="fragment">Nieuwjaarsreceptie</p>
+                </section>
+
+                <section>
+                    <h2>Tied voo klappers</h2>
+                    <iframe src="http://tv.giphy.com/applause" width="500" height="400"></iframe>
+                </section>
+
+                <section>
+                    <p><img src="../img/logo_phpwvl.png" width="150" /></p>
+                </section>
+
+                <section data-background-image="https://d29fhpw069ctt2.cloudfront.net/icon/image/39375/preview.svg" data-background-repeat="repeat" data-background-size="4%">
+                    <h2 style="color: white; background: black">2 Februari 2019</h2>
+                    <iframe src="http://tv.giphy.com/birtyhday" width="500" height="400"></iframe>
+                </section>
+
+                <section>
+                    <h2>Sponsoring?</h2>
+                </section>
+
+                <section>
+                    <h2>Designer?</h2>
+                </section>
+
+                <section>
+                    <h2>Raffle time!</h2>
+                </section>
+
+                <section>
+                    <h2>Raffle Reeglement</h2>
+                    <ul>
+                        <li class="fragment"><span class="emphasize">Joind.in commentaar ++</span></li>
+                        <li class="fragment"><span class="emphasize">Meetup aanwezig zin</span></li>
+                        <li class="fragment"><span class="emphasize"><del><a href="https://twitter.com/search?f=tweets&vertical=default&q=%23phpwvl&src=typd">#phpwvl</a></del></span></li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2>Raffle</h2>
+
+					<p class="fragment">
+						PHP-WVL Raffler CLI Edition!!!<br />
+						<a href="https://github.com/PHP-WVL/cli-raffler">https://github.com/PHP-WVL/cli-raffler</a>
+					</p>
+
+                    <ul>
+                        <li class="fragment">
+                            Boek gewonnen? Reviewke please
+                        </li>
+                        <li class="fragment">
+                            Geen reviewke? No worries, we gaan u niet overbelasten met nen nieuwen boek!
+                        </li>
+                    </ul>
+                </section>
+
+                <!--<section>
+                    <h2>Raffle <code>[black|white]</code>list</h2>
+
+                    <ul>
+                        <li><span class="emphasize">An</span> (<em>Build APIs You Won't Hate</em> review pending)</li>
+                        <li><span class="emphasize">Tobi</span> (<em>Refactoring to Collections</em> review pending)</li>
+                        <li><span class="emphasize">Bartel</span> (<em>Varnish in action</em> review pending)</li>
+                    </ul>
+                </section>-->
+
+                <section>
+                    <h2>Raffle</h2>
+
+                    <table border="0">
+                        <tbody>
+                        <!--<tr>
+                            <td class="fragment">
+                                <img src="https://user-images.githubusercontent.com/496145/30957211-eb7de6e8-a439-11e7-8e19-e2ef0bc89e89.jpg" width="400" />
+                                <br />
+                                Roave Elephpant
+                            </td>
+                            <td class="fragment">
+                                <img src="https://s3.amazonaws.com/titlepages.leanpub.com/surviving-other-peoples-web-apis/hero?1518079732" height="300" />
+                                <br />
+                                E-book: Surviving Other People's Web API's
+                            </td>
+                        </tr>-->
+                        <tr>
+                            <td colspan="2" class="fragment">
+                                PHPArch magazine &times;100
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section data-background-image="https://pro.harman.com/insights/wp-content/uploads/2016/01/speaker-wall.jpg">
+
+                </section>
+
+                <section>
+                    <h2>Toet de noaste kjé</h2>
+                    <a href="https://joind.in/event/php-wvl-november-meetup-at-digicreate">
+                        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://joind.in/event/php-wvl-november-meetup-at-digicreate"><br />
+                        https://joind.in/event/php-wvl-november-meetup-at-digicreate
+                    </a>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

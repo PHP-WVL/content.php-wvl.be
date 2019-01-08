@@ -30,3 +30,7 @@ div.reveal section .smaller {
     margin: 0;
     vertical-align: middle;
 }
+
+.reveal .slides section .twitter-tweet {
+    margin: auto;
+}
